@@ -61,7 +61,6 @@ input[type="text"] {
     justify-content: space-evenly;
     display: flex;
     width: 100%;
-    height: 30px;
 }
 .ustMenu li:hover {
     cursor: pointer;
@@ -125,8 +124,6 @@ input[type="text"] {
     display: flex;
     flex-direction: row;
     padding: 15px 50px;
-    width: 133px;
-    height: 190px;
     text-align: center;
     align-items: center;
 }
@@ -147,8 +144,6 @@ input[type="text"] {
 .footer {
     background-color: rgba(203, 203, 203, 0.78);
     padding-top: 20px;
-    width: 100%;
-    height: 250px;
 }
 .footerContent {
     display: flex;
@@ -156,9 +151,7 @@ input[type="text"] {
 }
 .footer h3{
     display: flex;
-    padding-bottom: 0;
     margin-bottom: 16px;
-    border-bottom: 0;
 }
 .footer h3 a {
     text-decoration: none;
@@ -171,8 +164,39 @@ input[type="text"] {
     text-decoration: none;
     color: black;
 }
-.footer .footerBottom {
-    width: 100%;
-    background-color: black;
-    color: white;
+@media only screen and (max-width: 500px) {
+
+.navBar .searchIcon {
+    display: none;
+}
+    .ustMenu {
+        justify-content:space-between;
+    }
+    ul li:nth-child(3) {
+        display: none;
+    }
+    .image img {
+        height: 300px;
+        width: 482px;
+    }
+    .brandTitle {
+        font-size: 15px;
+    }
+    .cardTitle h2 {
+        font-size: 22.5px;
+    }
+    .brand div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .cardHead div {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer {
+        display: none;
+    }
 }
