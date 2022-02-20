@@ -71,15 +71,22 @@ input[type="text"] {
     border-color: red;
 }
 .image {
+    text-align: center;
     padding-top: 30px;
 }
 .image img {
-    height: 500px;
-    width: 1349px;
+    padding-left: 50px;
+    height: 300px;
+    width: 500px;
+}
+.image p {
+    font-size: 28px;
+    font-style: italic;
+    font-weight: bold;
 }
 .brandTitle {
     font-family: 'Mulish', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 100;
     margin-bottom: 24px;
     padding-left: 20px;
@@ -112,10 +119,10 @@ input[type="text"] {
     margin-left: 8px;
     height: 500px;
 }
-.cardHead .cardTitle {
+.cardHead .cardTitle h2 {
     font-family: 'Mulish', sans-serif;
     font-weight: 200;
-    font-size: 30px;
+    font-size: 22.5px;
     padding-bottom: 24px;
     padding-left: 20px;
     padding-top: 40px;
@@ -123,13 +130,13 @@ input[type="text"] {
 .card {
     display: flex;
     flex-direction: row;
-    padding: 15px 50px;
+    margin: 5px 5px;
     text-align: center;
     align-items: center;
 }
 .card img:hover {
-     width: 250px;
-     height: 220px;
+     width: 190px;
+     height: 170px;
 }
 .card img {
     transition: 1s;
@@ -140,6 +147,8 @@ input[type="text"] {
 .card .cMoney {
     color: #5d3ebc;
     margin-bottom: 5px;
+}
+.card .cardContainer {
 }
 .footer {
     background-color: rgba(203, 203, 203, 0.78);
@@ -177,7 +186,7 @@ input[type="text"] {
     }
     .image img {
         height: 300px;
-        width: 482px;
+        width: 420px;
     }
     .brandTitle {
         font-size: 15px;
