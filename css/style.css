@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&family=Ubuntu:wght@300&display=swap');
+* {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.navBar {
+    padding-top: 10px;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+.navBar div > h1 {
+    padding: 5px 0 10px 20px;
+}
+.navBar .navContainer button {
+    width: 50px;
+    height: 45px;
+    margin-right: 10px;
+    color: black;
+    background-color: transparent;
+    border: none;
+}
+.navBar .navContainer button:hover {
+    cursor: pointer;
+    color: orange;
+    border-radius: 50px;
+}
+
+.searchIcon {
+    border: 3px solid grey ;
+    border-radius: 5px;
+    display: flex;
+}
+.searchIcon > span {
+    background-color: white;
+    padding: 6px 10px 6px 10px;
+}
+.searchIcon > button {
+    border: none;
+    color: white;
+    width: 50px;
+    background-color: grey;
+}
+.searchIcon button:hover {
+    cursor: pointer;
+    background-color: rgb(75, 75, 75);
+}
+input[type="text"] {
+    width: 500px;
+    height: 40px;
+    border: none;
+    box-sizing: content-box;
+}
+.ustMenu {
+    background-color: #d7d7d7;
+    margin-top: 10px;
+    list-style: none;
+    justify-content: space-evenly;
+    display: flex;
+    width: 100%;
+    height: 30px;
+}
+.ustMenu li:hover {
+    cursor: pointer;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 2px solid;
+    border-color: red;
+}
+.image {
+    padding-top: 30px;
+}
+.image img {
+    height: 500px;
+    width: 1349px;
+}
+.brandTitle {
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 24px;
+    padding-left: 20px;
+    margin-top: 40px;
+}
+.brandCard {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+}
+.brandCard div {
+    padding-left: 25px;
+}
+.brandCard div:hover {
+    color: orange;
+}
+.brandCard div p a:hover {
+
+    color: orange;
+}
+.brandCard p a{
+    text-decoration: none;
+    color: black;
+}
+.cardHead {
+    margin-top: 100px;
+    margin-left: 8px;
+    height: 500px;
+}
+.cardHead .cardTitle {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 50px;
+    width: 133px;
+    height: 190px;
+    text-align: center;
+    align-items: center;
+}
+.card img:hover {
+     width: 250px;
+     height: 220px;
+}
+.card img {
+    transition: 1s;
+}
+.card p {
+    font-weight: 200;
+}
+.card .cMoney {
+    color: #5d3ebc;
+    margin-bottom: 5px;
+}
+.footer {
+    background-color: rgba(203, 203, 203, 0.78);
+    padding-top: 20px;
+    width: 100%;
+    height: 250px;
+}
+.footerContent {
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer h3{
+    display: flex;
+    padding-bottom: 0;
+    margin-bottom: 16px;
+    border-bottom: 0;
+}
+.footer h3 a {
+    text-decoration: none;
+}
+.footer li {
+    list-style: none;
+    padding-bottom: 7px;
+}
+.footer li a {
+    text-decoration: none;
+    color: black;
+}
+.footer .footerBottom {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
