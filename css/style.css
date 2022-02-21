@@ -62,17 +62,21 @@ input[type="text"] {
     display: flex;
     width: 100%;
 }
+.ustMenu li {
+    height: 35px;
+}
 .ustMenu li:hover {
     cursor: pointer;
     border-left: 0;
     border-right: 0;
     border-top: 0;
-    border-bottom: 2px solid;
+    border-bottom: 1px solid;
     border-color: red;
 }
 .image {
     text-align: center;
-    padding-top: 30px;
+    margin-top: 30px;
+    padding-bottom: 80px;
 }
 .image img {
     padding-left: 50px;
@@ -84,17 +88,23 @@ input[type="text"] {
     font-style: italic;
     font-weight: bold;
 }
-.brandTitle {
+.brand {
+    text-align: center;
+}
+.brandTitle h2 {
     font-family: 'Mulish', sans-serif;
-    font-size: 15px;
+    font-size: 40px;
     font-weight: 100;
     margin-bottom: 24px;
     padding-left: 20px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 .brandCard {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
     text-align: center;
     padding-top: 50px;
     padding-left: 30px;
@@ -114,42 +124,7 @@ input[type="text"] {
     text-decoration: none;
     color: black;
 }
-.cardHead {
-    margin-top: 100px;
-    margin-left: 8px;
-    height: 500px;
-}
-.cardHead .cardTitle h2 {
-    font-family: 'Mulish', sans-serif;
-    font-weight: 200;
-    font-size: 22.5px;
-    padding-bottom: 24px;
-    padding-left: 20px;
-    padding-top: 40px;
-}
-.card {
-    display: flex;
-    flex-direction: row;
-    margin: 5px 5px;
-    text-align: center;
-    align-items: center;
-}
-.card img:hover {
-     width: 190px;
-     height: 170px;
-}
-.card img {
-    transition: 1s;
-}
-.card p {
-    font-weight: 200;
-}
-.card .cMoney {
-    color: #5d3ebc;
-    margin-bottom: 5px;
-}
-.card .cardContainer {
-}
+
 .footer {
     background-color: rgba(203, 203, 203, 0.78);
     padding-top: 20px;
@@ -173,39 +148,118 @@ input[type="text"] {
     text-decoration: none;
     color: black;
 }
-@media only screen and (max-width: 500px) {
+.cardHead .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 30px;
+}
+.cardHead .cardTitle h2 {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 100;
+    margin-bottom: 24px;
+    padding-left: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 40px;
+}
+.cardHead .cardContainer {
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+.cardContainer .front, .cardContainer .back {
+    width: inherit;
+    height: inherit;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: 1s transform;
+}
+.cardContainer .back {
+    transform: rotateY(-180deg);
+}
+.cardHead .card .cardContainer .back h1 {
+    padding-top: 65px;
+    font-size: 25px;
+}
+.cardHead .card .cardContainer .back h2 {;
+     font-size: 22px;
+    color: #5d3ebc;
+ }
+.cardHead .card .cardContainer .back p1 span {
+ padding-top: 30px;
+    font-size: 50px;
+    transition: 1s font-size;
+}
+.cardHead .card .cardContainer .back p1 span:hover {
+    color: orange;
+    font-size: 80px;
+}
+.cardHead .card .cardContainer .back p {
+    padding-top: 30px;
+    font-size: 20px;
+    color: grey;
+}
+.cardHead .card .cardContainer:hover .front {
+    transform: rotateY(180deg);
+}
+.cardContainer:hover .back {
+    transform: rotateX(0);
+}
+@media only screen  and (min-width: 1000px){
+    .brandTitle h2 {
+        font-size: 40px;
+    }
+    .brand .brandCard div img {
+        width: 198px;
+        height: 170px;
+    }
+    .brand .brandCard div p {
+        font-size: 25px;
+    }
 
-.navBar .searchIcon {
+}
+@media only screen and (max-width: 500px) {
+.navBar div h1 {
     display: none;
+}
+.navBar .searchIcon {
+    width: 250px;
 }
     .ustMenu {
         justify-content:space-between;
+        flex-wrap: wrap;
     }
     ul li:nth-child(3) {
         display: none;
     }
     .image img {
-        height: 300px;
-        width: 420px;
+        height: 250px;
+        width: 200px;
     }
-    .brandTitle {
-        font-size: 15px;
+    .image p {
+        font-size: 20px;
     }
-    .cardTitle h2 {
-        font-size: 22.5px;
+    .brand .brandTitle h2 {
+        font-size: 20px;
+    }
+    .cardHead .cardTitle h2 {
+        font-size: 20px;
     }
     .brand div {
         align-items: center;
         display: flex;
         flex-direction: column;
     }
-    .cardHead div {
-        text-align: center;
-        align-items: center;
+    .cardHead .card .cardContainer {
+        padding-left: 75px;
         display: flex;
         flex-direction: column;
     }
     .footer {
         display: none;
     }
+
 }
